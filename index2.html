@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-green.min.css">
-    <title>My First Webpage, With MDL-Extra</title>
+    <title>My First Webpage, Using MDL-Extra</title>
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
   </head>
   <body>
@@ -13,7 +13,7 @@
         <!-- Top row, always visible -->
         <div class = "mdl-layout__header-row">
           <!-- Title -->
-          <span class = "mdl-layout-title">HTML5 Tutorial</span>          
+          <span class = "mdl-layout-title">My First Webpage, Using MDL-Extra</span>          
         </div>
         <!-- Tabs -->
         <div class = "mdl-layout__tab-bar mdl-js-ripple-effect">
@@ -33,8 +33,37 @@
        
       <main class = "mdl-layout__content">
         <section class = "mdl-layout__tab-panel is-active" id = "scroll-tab-1">
-          <div class = "page-content">Tab 1 Contents</div>
+          <div class = "page-content">
+            <!-- Icon List -->
+            <style>
+            .demo-list-icon {
+              width: 300px;
+            }
+            </style>
+  
+            <ul class="demo-list-icon mdl-list">
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">person</i>
+                A List
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">person</i>
+                A Slider
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">person</i>
+                A Button
+                </span>
+              </li>
+            </ul>
+          </div>
         </section>
+        
         <section class = "mdl-layout__tab-panel" id = "scroll-tab-2">
           <div class = "page-content">Tab 2 Contents</div>
         </section>
