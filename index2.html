@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-green.min.css">
+    <title>My First Webpage, Using MDL-Extra</title>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+  </head>
+
+  <body>
+    <!-- The drawer is always open in large screens. The header is always shown, even in small screens. -->
+    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+      <header class = "mdl-layout__header">
+        <!-- Top row, always visible -->
+        <div class = "mdl-layout__header-row">
+          <!-- Title -->
+          <span class = "mdl-layout-title">My First Webpage, Using MDL-Extra</span>          
+        </div>
+        <!-- Tabs -->
+        <div class = "mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href = "#scroll-tab-1" class = "mdl-layout__tab is-active">Home</a>
+          <a href = "#scroll-tab-2" class = "mdl-layout__tab">Slider And Loading Bar</a>
+          <a href = "#scroll-tab-3" class = "mdl-layout__tab">Back to First Page</a>     
+        </div>
+      </header>
+       
+      <div class = "mdl-layout__drawer">
+        <span class = "mdl-layout-title">My First Webpage, Using MDL</span>
+        <nav class = "mdl-navigation">
+          <a class = "mdl-navigation__link" href = "index.html">index.html (first page)</a>
+          <a class = "mdl-navigation__link" href = "index2.html">index2.html (extra)</a>    
+        </nav>
+      </div>
+       
+      <main class = "mdl-layout__content">
+        <section class = "mdl-layout__tab-panel is-active" id = "scroll-tab-1">
+          <div class = "page-content">
+            <h4>Welcome to my extra page. This page includes:</h4>
+            <!-- Icon List -->
+            <style>
+            .demo-list-icon {
+              width: 300px;
+            }
+            </style>
+            <ul class="demo-list-icon mdl-list">
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">star</i>
+                A New Page Layout
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">star</i>
+                A New Colour Scheme
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">star</i>
+                A List With Icons
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">star</i>
+                A Slider
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">star</i>
+                A Loading Bar
+                </span>
+              </li>
+              <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">star</i>
+                Multiple Buttons
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class = "mdl-layout__tab-panel" id = "scroll-tab-2">
+          <div class = "page-content">
+            <h5>Here is a slider</h5>
+            <!-- Default Slider -->
+            <input class="mdl-slider mdl-js-slider" type="range"
+              min="0" max="100" value="0" tabindex="0">
+            <h5>Here is a loading bar</h5>
+            <!-- MDL Progress Bar with Indeterminate Progress -->
+            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+          </div>
+        </section>
+        
+        <section class = "mdl-layout__tab-panel" id = "scroll-tab-3">
+            <div class = "page-content">
+              <h5>Did you like this page?</h5>
+              <!-- Colored icon button -->
+              <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="alert('I am sorry to hear this.')">
+                <i class="material-icons">sentiment_dissatisfied</i>
+              </button>
+              <!-- Colored icon button -->
+              <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent" onclick="alert('Thankyou!')">
+                <i class="material-icons">mood</i>
+              </button>
+              <!-- Flat button with ripple -->
+              <a href="index.html">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  Click here to return to the first page
+                </button>
+              </a>
+            </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

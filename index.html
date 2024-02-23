@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Page Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css" />
+    <title>My First Webpage, With MDL</title>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
   </head>
-
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
   
+  <body>
+    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class = "mdl-layout__header">
+        <!-- Top row, always visible -->
+        <div class = "mdl-layout__header-row">
+          <!-- Title -->
+          <span class = "mdl-layout-title">My First Webpage, Using MDL</span>          
+        </div>
+      
+        <!-- Tabs -->
+        <div class = "mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href = "#scroll-tab-1" class = "mdl-layout__tab is-active">Home</a>
+          <a href = "#scroll-tab-2" class = "mdl-layout__tab">Extra</a>    
+        </div>
+      </header>
+
+      <div class = "mdl-layout__drawer">
+        <span class = "mdl-layout-title">My First Webpage, Using MDL</span>
+        <nav class = "mdl-navigation">
+           <a class = "mdl-navigation__link" href = "index.html">index.html (first page)</a>
+           <a class = "mdl-navigation__link" href = "index2.html">index2.html (extra)</a>    
+        </nav>
+     </div>
+
+      <main class = "mdl-layout__content">
+        <section class = "mdl-layout__tab-panel is-active" id = "scroll-tab-1">
+          <div class = "page-content">
+            <H4>Hello!</H4>
+            <!-- Textfield with Floating Label -->
+            <h6>What is your name?</h6>
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Type Your Name Here</label>
+              </div>
+            </form>
+            <!-- Numeric Textfield with Floating Label -->
+            <h6>What is your age?</h6>
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                <label class="mdl-textfield__label" for="sample4">Type Your Age Here</label>
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+            </form>
+            <!-- Accent-colored raised button with ripple -->
+            <button onclick="alert('Hello! Welcome to my first webpage using HTML.')" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Finished</button>
+          </div>     
+        </section>
+        
+        <section class = "mdl-layout__tab-panel" id = "scroll-tab-2">
+          <div class = "page-content">
+            <h4>Checklist</h4>
+            <!-- Table with a checklist -->
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Have You:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Input your name?</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Input your age?</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Pressed the "finished" button?</td>
+                </tr>
+              </tbody>
+            </table>
+              <!-- Button Chip -->
+              <a href="index2.html">
+                <button type="button" class="mdl-chip">
+                  <span class="mdl-chip__text">Click to view my index2 extra page</span>
+                </button>
+              </a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
